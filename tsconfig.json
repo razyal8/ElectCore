@@ -1,0 +1,27 @@
+{
+  "extends": "@tsconfig/node18-strictest-esm/tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "outDir": "./dist/",
+    "noPropertyAccessFromIndexSignature": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "strict": true,
+    "moduleResolution": "node"
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "include": [
+    "./src/**/*",
+    "./src/*",
+  ],
+  "exclude": [
+    "node_modules",
+    "coverage",
+    "dist",
+    "**/test/*",
+  ]
+}
