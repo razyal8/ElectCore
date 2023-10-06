@@ -15,3 +15,6 @@ export const insertUserToDb = async (user:User) => await getDb()
 
 export const findUserByUserName = async (userName:string):
 Promise<User | null> => await getDb().findOneByQuery({ userName });
+
+export const findAllUsers = async ()
+: Promise<User[]> => await getDb().findByQuery({});
