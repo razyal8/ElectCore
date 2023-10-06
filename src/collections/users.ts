@@ -13,8 +13,11 @@ const getDb = () => {
 export const insertUserToDb = async (user:User) => await getDb()
   .insertOne(user);
 
-export const findUserByUserName = async (userName:string):
-Promise<User | null> => await getDb().findOneByQuery({ userName });
+export const findUserByUserName = async (username:string):
+Promise<User | null> => await getDb().findOneByQuery({ username });
 
 export const findAllUsers = async ()
 : Promise<User[]> => await getDb().findByQuery({});
+
+export const findUserByQuery = async (query: object)
+: Promise<User | null> => await getDb().findOneByQuery(query);

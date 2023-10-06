@@ -17,6 +17,7 @@
   "devDependencies": {
     "@tsconfig/node18": "^18.2.2",
     "@tsconfig/node18-strictest-esm": "^1.0.1",
+    "@types/jsonwebtoken": "^9.0.3",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
     "@typescript-eslint/parser": "^6.7.2",
     "eslint": "^8.50.0",
@@ -31,6 +32,7 @@
     "exceljs": "^4.3.0",
     "faker": "^5.5.3",
     "fastify": "^4.23.2",
+    "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.1.0",
     "nodemon": "^3.0.1",
     "pino": "^8.15.1",
