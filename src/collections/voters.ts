@@ -2,7 +2,7 @@ import DbOperations from '../database/operations';
 import config from '../config/config';
 import type { Voter } from '../types/voter';
 
-const collectionName = 'election-day';
+const collectionName = 'voters';
 let db: DbOperations<Voter>;
 
 const getDb = () => {
@@ -12,3 +12,6 @@ const getDb = () => {
 
 export const insertVoterToDb = async (voter:Voter) => await getDb()
   .insertOne(voter);
+
+export const findVotersByQuery = async (query: object)
+: Promise<Voter[]> => await getDb().findByQuery(query);
