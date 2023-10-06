@@ -9,7 +9,9 @@
     "resolveJsonModule": true,
     "declaration": true,
     "strict": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "verbatimModuleSyntax": true,
+    "ignoreDeprecations": "5.0",
   },
   "ts-node": {
     "esm": true
